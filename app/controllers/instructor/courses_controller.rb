@@ -16,8 +16,8 @@ class Instructor::CoursesController < ApplicationController
 	end
 
 	def show
-		@course = Course.find(course_params)
-		@image = Image.new
+		@course = Course.find(params[:id])
+		# @image = Image.new
 	end
 
 	private
