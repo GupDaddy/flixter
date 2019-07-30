@@ -14,7 +14,7 @@ class Instructor::LessonsController < ApplicationController
 
 	def update
 		current_lesson.update_attributes(lesson_params)
-		render plan: 'updated!'
+		render plain: 'updated!'
 	end
 
 	private
@@ -26,7 +26,7 @@ class Instructor::LessonsController < ApplicationController
 	end
 
 	def current_lesson
-		@current_lesson ||= Lesson.find(params[:section_id])
+		@current_lesson ||= Lesson.find(params[:id])
 	end
 
 	def require_authorized_for_current_section

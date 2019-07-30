@@ -18,6 +18,8 @@ class Instructor::CoursesController < ApplicationController
 	def show
 		@course = Course.find(params[:id])
 		# @image = Image.new
+		# @section = Section.new
+		# @lesson = Lesson.new
 	end
 
 	private
