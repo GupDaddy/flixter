@@ -19,7 +19,7 @@ class Instructor::CoursesController < ApplicationController
 		# @course = Course.find(params[:id])
 		# @image = Image.new
 		@section = Section.new
-		# @lesson = Lesson.new
+		@lesson = Lesson.new
 	end
 
 	private
